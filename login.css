@@ -1,0 +1,261 @@
+/* Googole Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-left: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("img/opel_logo.jpg");
+}
+/* Variables*/
+
+:root{
+    --main-color:#d90429 ;
+    --text-color: #020102;
+    --bg-color: #fff;
+    --text2-color: #3EBACE;
+}
+section{
+    padding: 4rem 0 2rem;
+}
+.usr{
+    width: auto;
+    padding: 5%;
+}
+img{
+    width: 100%;
+}
+body{
+    color: var(--bg-color);
+    background-color:#D3D3D3;
+}
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 35px;     
+}
+#menu-icon{
+    font-style: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bg-color);
+}
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+}
+.navbar a{
+    color: var(--bg-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar a:hover, 
+.navbar .active{
+    color: var(--text2-color);
+    border-bottom: 3px solid var(--text2-color);
+}
+#search-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--bg-color);
+}
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 20px rgb(15, 54, 55 / 10%);
+    border: 1px solid var(--text2-color);
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+}
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+}
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+.heading{
+    text-align: center;
+    color: var(--text-color);
+}
+.heading span{
+    font-weight: 500;
+    color: var(--text-color);
+}
+.heading p{
+    font-size: 0.938rem;
+    font-weight: 300;
+    color: var(--text-color);
+}
+#logo-icon {
+    position: absolute; /* Задаваме абсолютна позиция на логото */
+    top: -50px; /* Позиционираме го отгоре на заглавието */
+    vertical-align: top;
+    left: 0px; /* Оставяме малко разстояние отдясно */
+    width: 200px; /* Размер на логото (променете според вашите изисквания) */
+    height: auto; /* За да запазите пропорциите на изображението */
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    color: var(--bg-color);
+    background-color:#D3D3D3;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--text2-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.create-account-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.create-account-link:hover {
+    text-decoration: underline;
+}
+
+#registrationContainer {
+    width: 600px;
+    background-color: #D3D3D3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 10rem auto; /* Centers the container horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 81vh;
+    text-align: center;
+  }
+  
+  #registrationContainer h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #registrationContainer form {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #registrationContainer .input-group {
+    margin-bottom: 15px; /* Reduce margin between input groups */
+  }
+  
+  #registrationContainer .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  #registrationContainer .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  #registrationContainer .input-group input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  #registrationContainer .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px; /* Reduce margin above the button */
+  }
+  
+  #registrationContainer .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #registrationContainer p {
+    text-align: center;
+    margin-top: 5px; /* Reduce margin above the paragraph */
+    color: #020102;
+  }
+  
+  #registrationContainer p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  #registrationContainer p a:hover {
+    text-decoration: underline;
+  }
+  
