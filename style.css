@@ -1,7 +1,8 @@
 /* Googole Fonts*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
+
+* {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
@@ -14,76 +15,86 @@
 
 /* Variables*/
 
-:root{
-    --main-color:#d90429 ;
+:root {
+    --main-color: #d90429;
     --text-color: #020102;
     --bg-color: #fff;
     --text2-color: #3EBACE;
 }
-section{
+
+section {
     padding: 4rem 0 2rem;
 }
 
-img{
+img {
     width: 100%;
 }
-body{
+
+body {
     color: var(--bg-color);
-    background-color:#D3D3D3;
+    background-color: #D3D3D3;
 }
-.container{
+
+.container {
     max-width: 1068px;
     margin-left: auto;
     margin-right: auto;
 }
-header{
+
+header {
     display: block;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: #020102;
-    height: 110px;
 }
-.nav{
+
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px 35px;     
+    padding: 20px 35px;
 }
-#menu-icon{
+
+#menu-icon {
     font-style: 24px;
     cursor: pointer;
     color: var(--text-color);
     display: none;
 }
-.logo{
+
+.logo {
     font-size: 2rem;
     font-weight: 700;
     color: var(--bg-color);
 }
-.navbar{
+
+.navbar {
     display: flex;
     column-gap: 2rem;
 }
-.navbar a{
+
+.navbar a {
     color: var(--bg-color);
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
 }
-.navbar a:hover, 
-.navbar .active{
+
+.navbar a:hover,
+.navbar .active {
     color: var(--text2-color);
     border-bottom: 3px solid var(--text2-color);
 }
-#search-icon{
+
+#search-icon {
     font-size: 24px;
     cursor: pointer;
     color: var(--bg-color);
 }
-.search-box{
+
+.search-box {
     position: absolute;
     top: 110%;
     right: 0;
@@ -94,11 +105,13 @@ header{
     border-radius: 0.5rem;
     clip-path: circle(0% at 100% 0%);
 }
-.search-box.active{
+
+.search-box.active {
     clip-path: circle(144% at 100% 0%);
     transition: 0.4s;
 }
-.search-box input{
+
+.search-box input {
     width: 100%;
     padding: 20px;
     border: none;
@@ -106,8 +119,9 @@ header{
     background: transparent;
     font-size: 1rem;
 }
-.home{
-    max-width: 2000px;
+
+.home {
+    max-width: 2500px;
     margin: auto;
     width: 100%;
     min-height: 640px;
@@ -118,53 +132,67 @@ header{
     background-size: cover;
     background-position: center left;
 }
-.home-text{
+
+.home-text {
     padding-left: 130px;
 }
-.home-text h1{
+
+.home-text h1 {
     font-size: 4rem;
 }
-.home-text h2{
+
+.home-text h2 {
     font-size: 2.4rem;
 }
-.home-text span{
-color: var(--text2-color);    
+
+.home-text span {
+    color: var(--text2-color);
 }
-.home-text p{
+
+.home-text p {
     font-size: 0.938rem;
     font-weight: 300;
     margin: 0.5rem 0 1.2rem;
 }
 
-.heading{
+.heading {
     text-align: center;
     color: var(--text-color);
 }
-.heading span{
+
+.heading span {
     font-weight: 500;
     color: var(--text-color);
 }
-.heading p{
+
+.heading p {
     font-size: 0.938rem;
     font-weight: 300;
     color: var(--text-color);
 }
+
 #logo-icon {
-    position: absolute; /* Задаваме абсолютна позиция на логото */
-    top: -50px; /* Позиционираме го отгоре на заглавието */
+    position: absolute;
+    /* Задаваме абсолютна позиция на логото */
+    top: -35px;
+    /* Позиционираме го отгоре на заглавието */
     vertical-align: top;
-    left: 0px; /* Оставяме малко разстояние отдясно */
-    width: 200px; /* Размер на логото (променете според вашите изисквания) */
-    height: auto; /* За да запазите пропорциите на изображението */
+    left: 0px;
+    /* Оставяме малко разстояние отдясно */
+    width: 200px;
+    /* Размер на логото (променете според вашите изисквания) */
+    height: auto;
+    /* За да запазите пропорциите на изображението */
 }
 
-.cars-container{
+.cars-container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
 }
-.cars-container .box{
+
+.cars-container .box {
     flex: 1 1 17rem;
     position: relative;
     height: 200px;
@@ -172,17 +200,20 @@ color: var(--text2-color);
     overflow: hidden;
 
 }
-.cars-container .box img{
+
+.cars-container .box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
-.cars-container .box img:hover{
+
+.cars-container .box img:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-.cars-container .box h2{
+
+.cars-container .box h2 {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
@@ -193,36 +224,111 @@ color: var(--text2-color);
     border-radius: 0.5rem;
     color: var(--text-color);
 }
-.cars-container .box:hover h2{
+
+.cars-container .box:hover h2 {
     background: var(--text2-color);
-    color: var(--bg-color); 
+    color: var(--bg-color);
 }
 
-.about{
+.about {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 1.5ram;
 }
-.about-img{
+
+.about-img {
     flex: 1 1 40rem;
 }
-.about-text{
+
+.about-text {
     flex: 1 1 30rem;
 }
-.about-text span{
+
+.about-text span {
     font-weight: 500;
     color: var(--text-color);
 }
-.about-text h2{
+
+.about-text h2 {
     font-size: 1.7rem;
     color: var(--text-color);
 }
-.about-text p{
+
+.about-text p {
     font-size: 0.938rem;
     margin: 0.5rem 0 1.4rem;
     color: var(--text-color);
 }
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        /* Change flex direction to column */
+        align-items: center;
+        /* Center items vertically */
+        text-align: center;
+        /* Center text horizontally */
+        padding: 20px;
+        /* Adjust padding */
+    }
+
+    .navbar {
+        display: none;
+        /* Hide menu links */
+    }
+
+    #menu-icon {
+        display: block;
+        /* Display menu icon */
+        font-size: 32px;
+        /* Set size of menu icon */
+        cursor: pointer;
+        /* Change cursor to pointer */
+        color: white;
+        /* Set color of menu icon */
+        justify-content: right;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+        /* Add margin below logo */
+    }
+
+    .search-box {
+        top: 100%;
+        /* Adjust search box position */
+    }
+
+    /* Hide home and search icons */
+    #house,
+    #search-icon {
+        display: none;
+    }
+
+    #menu-icon.active+.navbar,
+    #menu-overlay.active {
+        display: block;
+    }
+
+}
+
+/* Hamburger menu overlay */
+#menu-overlay {
+    display: none;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent black overlay */
+    z-index: 99;
+    /* Ensure the overlay is above other content */
+}
+/**/
 .footer-distributed{
     background: #666;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -241,13 +347,11 @@ color: var(--text2-color);
   }
   
   /* Footer left */
-  
   .footer-distributed .footer-left{
     width: 40%;
   }
   
   /* The company logo */
-  
   .footer-distributed h3{
     color:  #ffffff;
     font: normal 36px 'Open Sans', cursive;
@@ -259,7 +363,6 @@ color: var(--text2-color);
   }
   
   /* Footer links */
-  
   .footer-distributed .footer-links{
     color:  #ffffff;
     margin: 20px 0 12px;
@@ -372,7 +475,7 @@ color: var(--text2-color);
     cursor: pointer;
     background-color:  #33383b;
     border-radius: 2px;
-  
+  /**/
     font-size: 20px;
     color: #ffffff;
     text-align: center;
@@ -446,3 +549,4 @@ color: var(--text2-color);
     color: #fff; /* Цвят на иконата */
     font-size: 20px; /* Размер на иконата */
 }
+
