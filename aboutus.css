@@ -16,7 +16,6 @@
 :root{
     --main-color:#d90429 ;
     --text-color: #020102;
-    --bg-color: #fff;
     --text2-color: #3EBACE;
 }
 section{
@@ -31,6 +30,16 @@ body{
     color: var(--bg-color);
     background-color:#D3D3D3;
 }
+.team-item {
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    align-items: center; /* Added */
+}
+
+.team-item .bg-light {
+    flex-grow: 1; /* Added */
+}
+
 .container{
     max-width: 1068px;
     margin-left: auto;
@@ -45,6 +54,7 @@ header{
     z-index: 100;
     background-color: #020102;
     height: 110px;
+    color: white;
 }
 .nav{
     display: flex;
@@ -121,7 +131,7 @@ header{
 }
 #logo-icon {
     position: absolute; /* Задаваме абсолютна позиция на логото */
-    top: -50px; /* Позиционираме го отгоре на заглавието */
+    top: -35px; /* Позиционираме го отгоре на заглавието */
     vertical-align: top;
     left: 0px; /* Оставяме малко разстояние отдясно */
     width: 200px; /* Размер на логото (променете според вашите изисквания) */
@@ -137,7 +147,30 @@ section{
     padding: 0 20px;
     text-align: left; /* Left align the text */
 }
+/*** Team ***/
+.team-item .team-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    transform: scale(0);
+    transition: .5s;
+}
 
+.team-item:hover .team-overlay {
+    transform: scale(1);
+}
+
+.team-item .team-overlay .btn {
+    color: var(--primary);
+    background: #FFFFFF;
+}
+
+.team-item .team-overlay .btn:hover {
+    color: #FFFFFF;
+    background: var(--secondary)
+}
+/**/
 .footer-distributed{
     background: #666;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -156,13 +189,11 @@ section{
   }
   
   /* Footer left */
-  
   .footer-distributed .footer-left{
     width: 40%;
   }
   
   /* The company logo */
-  
   .footer-distributed h3{
     color:  #ffffff;
     font: normal 36px 'Open Sans', cursive;
@@ -174,7 +205,6 @@ section{
   }
   
   /* Footer links */
-  
   .footer-distributed .footer-links{
     color:  #ffffff;
     margin: 20px 0 12px;
@@ -287,7 +317,7 @@ section{
     cursor: pointer;
     background-color:  #33383b;
     border-radius: 2px;
-  
+  /**/
     font-size: 20px;
     color: #ffffff;
     text-align: center;
@@ -361,3 +391,4 @@ section{
     color: #fff; /* Цвят на иконата */
     font-size: 20px; /* Размер на иконата */
 }
+

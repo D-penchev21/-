@@ -15,56 +15,45 @@
 <body>
 
     <!-- Navbar -->
-    <header>
-        <!-- Nav Container -->
-        <div class="nav container">
-            <!-- Menu icon -->
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <!-- Logo -->
-            <a href="index.html" class="logo active">
-                <i class='bx bx-home'></i>
-            </a>
-            <img src="Logo.webp" alt="" id="logo-icon">
-            <!-- Nav list -->
-            <ul class="navbar">
-                <li><a href="Buy.html">Купуване</a></li>
-                <li><a href="index.html/#cars">Наемане</a></li>
-                <li><a href="aboutus.html">За нас</a></li>
-                <li><a href="#parts">Контакти</a></li>
-                <li><a href="login.html">Вход</a></li>
-            </ul>
-            <!-- Search icon -->
-            <i class='bx bx-search' id="search-icon"></i>
-            <!-- Search box -->
-            <div class="search-box container">
-                <input type="search" name="" id="" placeholder="Search here...">
-            </div>
+<header>
+    <!-- Nav Container -->
+    <div class="nav container">
+        <!-- Menu icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- Logo -->
+        <a href="index.html" class="logo active">
+            <i class='bx bx-home'></i>
+        </a>
+        <img src="img/Logo.webp" alt="" id="logo-icon">
+        <!-- Nav list -->
+        <ul class="navbar">
+            <li><a href="buy.html">Купуване</a></li>
+            <li><a href="rent.html">Наемане</a></li>
+            <li><a href="aboutus.html">За нас</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="login.html">Вход</a></li>
+        </ul>
+        <!-- Search icon -->
+        <i class='bx bx-search' id="search-icon" onclick="toggleSearch()"></i>
+        <!-- Search box -->
+        <div class="search-box container" id="search-box">
+            <input type="search" name="" id="search-input" placeholder="Търси по модел...">
         </div>
-    </header>
-
-
-    
-
-<!-- Cars Section-->
-<section class="cars" id="cars">
-    <div class="heading">
-        
-        <h2>Ние предлагаме широка гама модели от коли за наемане и купуване, като за всяка от тях може да се премине тест драйв</h2>
-        <p></p>
-        
-
     </div>
+</header>
+
     <!--Cars Container-->
     <div class="cars-container container">
         <!--Box 1-->
         <div class="box"> 
-            <img src="img/Astra.jpg" alt="">
+            <img src="img/Astra2.jpg" alt="">
             <a href="astra_details.html" target="_blank"><h2>Вижте повече</h2></a>
             <div class="car-info">
                 <h3>Модел: Astra</h3>
                 <p>Година: 2023</p>
                 <p>Километри: 20000</p>
                 <p>Цена: 30000 BGN</p>
+                <p>Цвят: Тъмно син металик</p>
             </div>
         </div>
         <!--Box 2-->
@@ -75,26 +64,29 @@
                 <p>Година: 2024</p>
                 <p>Километри: 15000</p>
                 <p>Цена: 50000 BGN</p>
+                <p>Цвят: Светло син металик</p>
             </div>
         </div>
         <!--Box 3-->
         <div class="box"> 
-            <img src="img/Corsa.jpg" alt="">
+            <img src="img/Corsa2.jpg" alt="">
             <a href="astra_details.html" target="_blank"><h2>Вижте повече</h2></a>            <div class="car-info">
                 <h3>Модел: Corsa</h3>
                 <p>Година: 2022</p>
                 <p>Километри: 15000</p>
                 <p>Цена: 25000 BGN</p>
+                <p>Цвят: Сив металик</p>
             </div>
         </div>
         <!--Box 4-->
         <div class="box"> 
-            <img src="img/insignia.jpg" alt="">
+            <img src="img/insignia2.jpg" alt="">
             <a href="astra_details.html" target="_blank"><h2>Вижте повече</h2></a>            <div class="car-info">
                 <h3>Модел: Insignia</h3>
                 <p>Година: 2024</p>
                 <p>Километри: 18000</p>
                 <p>Цена: 35000 BGN</p>
+                <p>Цвят: Бял металик</p>
             </div>
         </div>
         <!--Box 5-->
@@ -105,6 +97,7 @@
                 <p>Година: 2023</p>
                 <p>Километри: 22000</p>
                 <p>Цена: 28000 BGN</p>
+                <p>Цвят: Зелен металик</p>
             </div>
         </div>
         <!--Box 6-->
@@ -115,6 +108,7 @@
                 <p>Година: 2022</p>
                 <p>Километри: 20000</p>
                 <p>Цена: 30000 BGN</p>
+                <p>Цвят: Бял металик</p>
             </div>
         </div>
         <!--Box 7-->
@@ -125,6 +119,7 @@
                 <p>Година: 2024</p>
                 <p>Километри: 25000</p>
                 <p>Цена: 32000 BGN</p>
+                <p>Цвят: Бял металик</p>
             </div>
         </div>
         <!--Box 8-->
@@ -135,6 +130,7 @@
                 <p>Година: 2023</p>
                 <p>Километри: 19000</p>
                 <p>Цена: 27000 BGN</p>
+                <p>Цвят: Червен металик</p>
             </div>
         </div>
         <!--Box 9-->
@@ -145,6 +141,7 @@
                 <p>Година: 2022</p>
                 <p>Километри: 17000</p>
                 <p>Цена: 26000 BGN</p>
+                <p>Цвят: Тъмно сив металик</p>
             </div>
         </div>
         <!--Box 10-->
@@ -155,6 +152,7 @@
                 <p>Година: 2024</p>
                 <p>Километри: 20000</p>
                 <p>Цена: 30000 BGN</p>
+                <p>Цвят: Син металик</p>
             </div>
         </div>
         <!--Box 11-->
@@ -165,6 +163,7 @@
                 <p>Година: 2023</p>
                 <p>Километри: 21000</p>
                 <p>Цена: 29000 BGN</p>
+                <p>Цвят: Червен металик</p>
             </div>
         </div>
         <!--Box 12-->
@@ -175,9 +174,12 @@
                 <p>Година: 2022</p>
                 <p>Километри: 23000</p>
                 <p>Цена: 31000 BGN</p>
+                <p>Цвят: Сив металик</p>
             </div>
         </div>
     </div>
+
+    
     
 </section>
 
@@ -224,4 +226,6 @@
     </div>
 </footer>
 
+<!-- Link to JS -->
+<script src="by.js"> </script>
 </body>
